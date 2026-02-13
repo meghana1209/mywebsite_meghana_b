@@ -143,3 +143,20 @@ body {
     height: 300px;
   }
 }
+.girl-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.girl-anim {
+  width: 220px;
+  animation: floatGirl 5s ease-in-out infinite;
+  filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15));
+}
+
+@keyframes floatGirl {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
+}
