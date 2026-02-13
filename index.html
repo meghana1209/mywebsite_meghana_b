@@ -1,254 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meghana B — Portfolio</title>
 
-  <title>Meghana B — AI & Data Science Engineer</title>
-  <meta name="description" content="Meghana B — AI & Data Science Engineer | Portfolio" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css"/>
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158/build/three.min.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
 </head>
 
 <body>
 
-  <!-- Animated Background -->
-  <div class="bg-animation" aria-hidden="true"></div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">MB</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-btn">Get In Touch</a>
+  </nav>
 
-  <!-- ================= NAVIGATION ================= -->
-  <header class="nav-wrap glass" id="navbar">
-    <div class="container nav-inner">
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <h1>Meghana B</h1>
+      <div class="badge">AI & DATA SCIENCE ENGINEER</div>
+      <p>
+        Aspiring Software Development Engineer passionate about building
+        intelligent systems, immersive interfaces, and scalable cloud solutions.
+      </p>
 
-      <a class="brand" href="#home">Meghana B</a>
-
-      <nav>
-        <button id="nav-toggle" aria-label="Toggle menu">☰</button>
-
-        <ul id="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#resume-hub">Resume Hub</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-actions">
-        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
-          🌙
-        </button>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
-
     </div>
-  </header>
 
-  <!-- ================= MAIN ================= -->
-  <main>
-
-    <!-- ================= HERO ================= -->
-    <section id="home" class="section hero">
-      <div class="container hero-inner">
-
-        <div class="hero-copy glass reveal">
-          <h1>Meghana B</h1>
-          <p class="tagline">AI & Data Science Engineer</p>
-          <p class="subtitle">
-            Aspiring SDE | Data Analyst | Analytics & Cloud Enthusiast
-          </p>
-
-          <div class="hero-cta">
-            <a class="btn primary" href="#projects">Explore Projects</a>
-            <a class="btn ghost" href="#resume-hub">Resume Hub</a>
-          </div>
-        </div>
-
-        <!-- HERO VISUAL -->
-        <div class="hero-visual reveal">
-          <div class="glass card visual-card">
-            <h3>Innovate with AI</h3>
-            <p>Designer of intelligent analytics & scalable data systems.</p>
-
-            <div class="girl-wrap">
-              <!-- Girl Illustration -->
-              <svg class="girl-anim" viewBox="0 0 260 320"
-                   xmlns="http://www.w3.org/2000/svg"
-                   aria-hidden="true">
-
-                <defs>
-                  <linearGradient id="hair" x1="0" x2="1">
-                    <stop offset="0%" stop-color="#9d7cff"/>
-                    <stop offset="100%" stop-color="#7cf2ff"/>
-                  </linearGradient>
-                </defs>
-
-                <g transform="translate(10,10)">
-                  <circle cx="120" cy="60" r="44" fill="#ffd6e0" />
-                  <path d="M60 40 C70 10, 170 10, 200 40
-                           C190 20, 170 12, 120 30
-                           C70 48, 50 30, 60 40Z"
-                        fill="url(#hair)" opacity="0.95" />
-
-                  <rect x="72" y="110" rx="18" ry="18"
-                        width="96" height="110"
-                        fill="rgba(255,255,255,0.02)"
-                        stroke="rgba(255,255,255,0.04)" />
-
-                  <circle cx="105" cy="58" r="4" fill="#111827" />
-                  <circle cx="135" cy="58" r="4" fill="#111827" />
-
-                  <path d="M110 78 q6 8 14 0"
-                        stroke="#111827" stroke-width="2"
-                        fill="none" stroke-linecap="round" />
-
-                  <path d="M100 146 q20 10 40 0"
-                        stroke="rgba(0,0,0,0.25)"
-                        stroke-width="3"
-                        fill="none"
-                        stroke-linecap="round" />
-                </g>
-
-              </svg>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="section about">
-      <div class="container">
-        <h2 class="section-title reveal">About</h2>
-
-        <div class="glass about-card reveal">
-          <p>
-            Final-year AI & Data Science student with hands-on experience in building
-            analytics platforms and machine learning solutions. Strong in SQL, Python,
-            Power BI, and Cloud technologies. Passionate about roles in SDE, Data,
-            Analytics, and Operations where I can combine engineering rigor with
-            data-driven decision making.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= SKILLS ================= -->
-    <section id="skills" class="section skills">
-      <div class="container">
-        <h2 class="section-title reveal">Skills</h2>
-
-        <div class="skills-grid">
-          <div class="skill-card glass reveal">C++</div>
-          <div class="skill-card glass reveal">Python</div>
-          <div class="skill-card glass reveal">SQL</div>
-          <div class="skill-card glass reveal">Power BI</div>
-          <div class="skill-card glass reveal">Tableau</div>
-          <div class="skill-card glass reveal">AWS</div>
-          <div class="skill-card glass reveal">Machine Learning</div>
-          <div class="skill-card glass reveal">Frontend Development</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="section projects">
-      <div class="container">
-        <h2 class="section-title reveal">Projects</h2>
-
-        <div class="projects-grid">
-
-          <article class="project-card glass reveal">
-            <h3>SAP Inventory & Logistics Analytics</h3>
-            <p class="tech">SAP HANA • SQL • Python • Power BI</p>
-            <p class="desc">
-              Inventory optimization and logistics performance dashboards.
-            </p>
-            <a class="link" href="#">GitHub →</a>
-          </article>
-
-          <article class="project-card glass reveal">
-            <h3>Nirmal AI – Smart Waste Detection</h3>
-            <p class="tech">Python • AI/ML • AWS</p>
-            <p class="desc">
-              AI-powered waste recognition system improving segregation efficiency.
-            </p>
-            <a class="link" href="#">GitHub →</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= ACHIEVEMENTS ================= -->
-    <section id="achievements" class="section achievements">
-      <div class="container">
-        <h2 class="section-title reveal">Achievements</h2>
-
-        <div class="achievements-grid">
-          <div class="glass achievement-card reveal">Research Publication – IJSDR</div>
-          <div class="glass achievement-card reveal">Presenter – IISc AI Health Summit</div>
-          <div class="glass achievement-card reveal">Hackathon Finalist</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= RESUME HUB ================= -->
-    <section id="resume-hub" class="section resume-hub">
-      <div class="container">
-        <h2 class="section-title reveal">Resume Hub</h2>
-
-        <div class="glass resume-panel reveal">
-
-          <div class="resume-controls">
-            <button class="btn resume-btn" data-key="sde">SDE</button>
-            <button class="btn resume-btn" data-key="ds">Data</button>
-            <button class="btn resume-btn" data-key="nonit">Non-IT</button>
-          </div>
-
-          <h3 id="resume-title">Software Development Engineer</h3>
-          <p id="resume-desc">Resume tailored for SDE roles.</p>
-
-          <div class="iframe-wrap">
-            <iframe id="resume-iframe"
-                    src="resumes/resume_sde.pdf"
-                    title="Resume Preview"></iframe>
-          </div>
-
-          <a id="resume-download"
-             class="btn primary"
-             href="resumes/resume_sde.pdf"
-             download>
-            Download Resume
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= CONTACT ================= -->
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h2 class="section-title reveal">Contact</h2>
-
-        <div class="glass contact-card reveal">
-          <p><strong>Email:</strong> <a href="mailto:meghanab235@gmail.com">meghanab235@gmail.com</a></p>
-          <p><strong>Phone:</strong> +91 9113962148</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      © Meghana B • Portfolio
+    <div class="hero-right">
+      <div id="canvas-container"></div>
     </div>
-  </footer>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I specialize in AI, Data Science, and Cloud technologies. I enjoy designing
+      elegant digital experiences and solving complex engineering problems.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card">Project One</div>
+      <div class="card">Project Two</div>
+      <div class="card">Project Three</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: meghanab235@gmail.com</p>
+  </section>
+
+  <!-- Scripts -->
   <script src="script.js"></script>
-
 </body>
 </html>
