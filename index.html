@@ -1,178 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meghana B | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meghana B — AI & Data Science Engineer</title>
+    <meta name="description" content="Meghana B — AI & Data Science Engineer | Portfolio" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-animation" aria-hidden="true"></div>
 
-<!-- NAVIGATION -->
-<header>
-  <nav class="nav">
-    <h2 class="logo">Meghana B</h2>
-
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <button id="themeToggle">🌙</button>
-  </nav>
-</header>
-
-<!-- HOME -->
-<section id="home" class="section hero">
-  <div class="hero-content reveal">
-    <h1>Hi, I'm <span>Meghana B</span></h1>
-    <h3>AI & Data Science Engineer</h3>
-    <p>
-      Aspiring Software Development Engineer / Data Analyst  
-      Building intelligent systems, analytics solutions, and cloud-based applications.
-    </p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="reveal">
-    <h2>About Me</h2>
-    <p>
-      Final-year B.E. student in Artificial Intelligence and Data Science with strong foundations in
-      programming, analytics, and enterprise-style problem solving. Passionate about transforming
-      raw data into scalable decisions and business value.
-    </p>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section">
-  <div class="reveal">
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill-card">C++</div>
-      <div class="skill-card">Python</div>
-      <div class="skill-card">SQL</div>
-      <div class="skill-card">Power BI</div>
-      <div class="skill-card">Tableau</div>
-      <div class="skill-card">AWS / Cloud</div>
-      <div class="skill-card">HTML / CSS / JS</div>
-      <div class="skill-card">Machine Learning</div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="reveal">
-    <h2>Projects</h2>
-
-    <div class="project-grid">
-
-      <div class="project-card">
-        <h3>SAP Inventory & Logistics Analytics</h3>
-        <p>SQL • ERP Analytics</p>
-        <p>
-          Built analytics workflows to track stock movement, demand variability,
-          and logistics efficiency aligned with SAP reporting concepts.
-        </p>
-        <a href="#">GitHub →</a>
+    <header class="nav-wrap glass" id="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="#home">Meghana B</a>
+        <nav>
+          <button id="nav-toggle" aria-label="Toggle menu">☰</button>
+          <ul id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#resume-hub">Resume Hub</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌗</button>
+        </div>
       </div>
+    </header>
 
-      <div class="project-card">
-        <h3>Nirmal AI – Smart Waste Detection</h3>
-        <p>Python • AI/ML</p>
-        <p>
-          AI-powered waste recognition system recommending correct disposal bins
-          with gamified cleanliness scoring.
-        </p>
-        <a href="#">GitHub →</a>
-      </div>
+    <main>
+      <section id="home" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-copy glass reveal">
+            <h1>Meghana B</h1>
+            <p class="tagline">AI & Data Science Engineer</p>
+            <p class="subtitle">Aspiring SDE | Data Analyst | Analytics & Cloud Enthusiast</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">Explore Projects</a>
+              <a class="btn ghost" href="#resume-hub">Resume Hub</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="glass card visual-card">
+              <h3>Innovate with AI</h3>
+              <p>Designer of intelligent analytics & scalable data systems.</p>
+              <div class="girl-wrap">
+                <!-- Simplified inline SVG girl illustration with subtle animation -->
+                <svg class="girl-anim" viewBox="0 0 260 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="hair" x1="0" x2="1">
+                      <stop offset="0%" stop-color="#9d7cff"/>
+                      <stop offset="100%" stop-color="#7cf2ff"/>
+                    </linearGradient>
+                  </defs>
+                  <g transform="translate(10,10)">
+                    <circle cx="120" cy="60" r="44" fill="#ffd6e0" />
+                    <path d="M60 40 C70 10, 170 10, 200 40 C190 20, 170 12, 120 30 C70 48, 50 30, 60 40Z" fill="url(#hair)" opacity="0.95" />
+                    <rect x="72" y="110" rx="18" ry="18" width="96" height="110" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" />
+                    <path d="M110 78 q6 8 14 0" stroke="#111827" stroke-width="2" fill="none" stroke-linecap="round" />
+                    <circle cx="105" cy="58" r="4" fill="#111827" />
+                    <circle cx="135" cy="58" r="4" fill="#111827" />
+                    <path d="M100 146 q20 10 40 0" stroke="rgba(0,0,0,0.25)" stroke-width="3" fill="none" stroke-linecap="round" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div class="project-card">
-        <h3>SAP HANA Supplier Analytics</h3>
-        <p>SQL • KPI Analytics</p>
-        <p>
-          Developed SQL-based KPIs evaluating delivery efficiency,
-          lead times, and supplier cost trends.
-        </p>
-        <a href="#">GitHub →</a>
-      </div>
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title reveal">About</h2>
+          <div class="glass about-card reveal">
+            <p>
+              Final-year AI & Data Science student with hands-on experience in building
+              analytics platforms and machine learning solutions. Strong in SQL, Python,
+              Power BI, and Cloud technologies. Passionate about roles in SDE, Data,
+              Analytics, and Operations where I can combine engineering rigor with
+              data-driven decision making.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <div class="project-card">
-        <h3>RetailSight Analytics Platform</h3>
-        <p>Snowflake • Power BI</p>
-        <p>
-          Designed a cloud warehouse & dashboards visualizing sales,
-          inventory, and profitability insights.
-        </p>
-        <a href="#">GitHub →</a>
-      </div>
+      <section id="skills" class="section skills">
+        <div class="container">
+          <h2 class="section-title reveal">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card glass reveal">C++</div>
+            <div class="skill-card glass reveal">Python</div>
+            <div class="skill-card glass reveal">SQL</div>
+            <div class="skill-card glass reveal">Power BI</div>
+            <div class="skill-card glass reveal">Tableau</div>
+            <div class="skill-card glass reveal">AWS</div>
+            <div class="skill-card glass reveal">Machine Learning</div>
+            <div class="skill-card glass reveal">Frontend Development</div>
+          </div>
+        </div>
+      </section>
 
-    </div>
-  </div>
-</section>
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="section-title reveal">Projects</h2>
+          <div class="projects-grid">
+            <!-- Repeat for each project -->
+            <article class="project-card glass reveal">
+              <h3>SAP Inventory & Logistics Analytics</h3>
+              <p class="tech">Tech: SAP HANA, SQL, Python, Power BI</p>
+              <p class="desc">Inventory optimization and logistics performance dashboards to reduce stockouts and lead times.</p>
+              <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+            </article>
 
-<!-- ACHIEVEMENTS -->
-<section id="achievements" class="section">
-  <div class="reveal">
-    <h2>Achievements & Certifications</h2>
-    <ul class="achievement-list">
-      <li>Research Publication – IJSDR</li>
-      <li>Presenter – IISc AI Health Summit</li>
-      <li>Power BI & Tableau Certifications</li>
-      <li>Hackathon Finalist</li>
-    </ul>
-  </div>
-</section>
+            <article class="project-card glass reveal">
+              <h3>Nirmal AI – Smart Waste Detection System</h3>
+              <p class="tech">Tech: Python, TensorFlow, AWS</p>
+              <p class="desc">Real-time waste detection using computer vision to enable intelligent routing and recycling.</p>
+              <a class="link" href="#">GitHub</a>
+            </article>
 
-<section id="resume" class="section">
-  <div class="glass reveal">
-    <h2>Resume Hub</h2>
-    <p>Select the role you're hiring for:</p>
+            <article class="project-card glass reveal">
+              <h3>SAP HANA Supplier Performance Analytics</h3>
+              <p class="tech">Tech: SAP HANA, SQL, Power BI</p>
+              <p class="desc">Supplier scorecards and trend analysis to inform procurement decisions.</p>
+              <a class="link" href="#">GitHub</a>
+            </article>
 
-    <div class="resume-buttons">
-      <button onclick="showResume('sde')">Software Development Engineer</button>
-      <button onclick="showResume('ds')">Data Science / Analytics</button>
-      <button onclick="showResume('nonit')">Non-IT / Operations</button>
-    </div>
+            <article class="project-card glass reveal">
+              <h3>RetailSight – Sales & Supply Chain Analytics Platform</h3>
+              <p class="tech">Tech: Python, Tableau, AWS</p>
+              <p class="desc">Comprehensive sales & supply chain analytics with forecasting and anomaly detection.</p>
+              <a class="link" href="#">GitHub</a>
+            </article>
 
-    <div class="resume-display">
-      <h3 id="resumeTitle">Software Development Engineer</h3>
-      <p id="resumeDesc">
-        Focused on scalable systems, DSA, backend logic, and cloud integration.
-      </p>
+            <article class="project-card glass reveal">
+              <h3>Weather App – Real-Time Forecast Viewer</h3>
+              <p class="tech">Tech: JavaScript, APIs</p>
+              <p class="desc">Clean UI for fetching and presenting live weather forecasts with locality insights.</p>
+              <a class="link" href="#">GitHub</a>
+            </article>
 
-      <iframe id="resumeFrame" src="resumes/resume_sde.pdf"></iframe>
+            <article class="project-card glass reveal">
+              <h3>Blinkit Real-Time Sales Dashboard</h3>
+              <p class="tech">Tech: Power BI, SQL</p>
+              <p class="desc">Live sales monitoring dashboards for delivery optimization.</p>
+              <a class="link" href="#">GitHub</a>
+            </article>
 
-      <a id="resumeDownload" href="resumes/resume_sde.pdf" class="btn" download>
-        Download Resume
-      </a>
-    </div>
-  </div>
-</section>
+            <article class="project-card glass reveal">
+              <h3>Rainfall Trends Analysis with Python</h3>
+              <p class="tech">Tech: Python, Pandas</p>
+              <p class="desc">Climate trend analysis and seasonal forecasting for regional planning.</p>
+              <a class="link" href="#">GitHub</a>
+            </article>
 
+            <article class="project-card glass reveal">
+              <h3>Swiggy Sales Analysis Dashboard</h3>
+              <p class="tech">Tech: SQL, Tableau</p>
+              <p class="desc">Detailed sales breakdowns and area-based insights to drive operations.</p>
+              <a class="link" href="#">GitHub</a>
+            </article>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="reveal">
-    <h2>Contact</h2>
-    <p>Email: <strong>meghanab235@gmail.com</strong></p>
-    <p>Phone: <strong>+91 9113962148</strong></p>
-  </div>
-</section>
+            <article class="project-card glass reveal">
+              <h3>AI Chatbot for E-commerce using AWS</h3>
+              <p class="tech">Tech: AWS Lex, Lambda, Python</p>
+              <p class="desc">Conversational agent for customer support and product discovery.</p>
+              <a class="link" href="#">GitHub</a>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<script src="script.js"></script>
-</body>
+      <section id="achievements" class="section achievements">
+        <div class="container">
+          <h2 class="section-title reveal">Achievements</h2>
+          <div class="achievements-grid">
+            <div class="glass achievement-card reveal">Research Publication – IJSDR</div>
+            <div class="glass achievement-card reveal">Presenter – IISc AI Health Summit</div>
+            <div class="glass achievement-card reveal">Power BI & Tableau Certifications</div>
+            <div class="glass achievement-card reveal">Hackathon Finalist</div>
+            <div class="glass achievement-card reveal">Infosys Springboard Cohort</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume-hub" class="section resume-hub">
+        <div class="container">
+          <h2 class="section-title reveal">Resume Hub</h2>
+          <div class="glass resume-panel reveal">
+            <div class="resume-controls">
+              <button class="btn resume-btn" data-key="sde">Software Development Engineer</button>
+              <button class="btn resume-btn" data-key="ds">Data Science / Analytics</button>
+              <button class="btn resume-btn" data-key="nonit">Non-IT / Operations</button>
+            </div>
+            <div class="resume-preview">
+              <h3 id="resume-title">Software Development Engineer</h3>
+              <p id="resume-desc">Resume tailored for SDE roles, highlighting system design and coding projects.</p>
+              <div class="iframe-wrap">
+                <iframe id="resume-iframe" src="resumes/resume_sde.pdf" title="Resume Preview"></iframe>
+              </div>
+              <a id="resume-download" class="btn primary" href="resumes/resume_sde.pdf" download>Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title reveal">Contact</h2>
+          <div class="glass contact-card reveal">
+            <p><strong>Email:</strong> <a href="mailto:meghanab235@gmail.com">meghanab235@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 9113962148</p>
+            <p><strong>GitHub:</strong> <a href="#">github.com/your-handle</a></p>
+            <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/your-profile</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© Meghana B • Built with passion</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
