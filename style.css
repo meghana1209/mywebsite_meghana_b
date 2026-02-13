@@ -197,3 +197,29 @@ iframe {
   opacity: 1;
   transform: translateY(0);
 }
+.resume-buttons {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.resume-buttons button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-buttons button:hover {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 0 15px var(--accent);
+}
+
+.resume-display {
+  margin-top: 20px;
+}
